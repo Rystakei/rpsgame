@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h2> Game Results </h2>
-
+<!-- Shows the game results to the user -->
 <table class="results">
 	<tr>
 		<td> You picked:</td>
@@ -19,16 +19,16 @@
 		</td>
 	</tr>
 </table>
-<div class="results-message">
-<p>
-<% if @game.status == "User Won" %>
-Congratulations! You won!
-<% elsif @game.status == "Tied" %>
-It was a tie!
-<% else %>
-Sorry, you lost. 
 
-<% end %>
-</p>
-<p> Want to <%= link_to "play again?", "/" %> </p>
+<div class="results-message">
+	<p>
+	<% if @game.status == "User Won" %>
+		Congratulations! You won!
+	<% elsif @game.status == "Tied" %>
+		It was a tie!
+	<% else %>
+		Sorry, you lost. 
+	<% end %>
+	</p>
+	<p> Want to <%= link_to "play again?", "/" %> </p>
 </div>

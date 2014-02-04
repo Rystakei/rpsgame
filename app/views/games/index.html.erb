@@ -1,18 +1,29 @@
 <h1>Rock, Paper, Scissors </h1>
 
 <div class="rps-signs">
-<img class="rps-img" src="http://www.clker.com/cliparts/V/0/0/e/T/J/rock-paper-scissor-game-th.png" />
+<%= image_tag("rpsgamesigns.png", :class => "rps-img") %>
 </div> 
 
 <h3> Wanna play? Make a choice of which hand sign you'd like to use,
 and try your luck against the computer.</h3>
+<div class="rules">
+<h3> The Rules</h3>
+<ul>
+<li>Rock beats scissors</li>
+<li> Scissors beats paper</li>
+<li> Paper beats rock </li>
+<li> Same signs = tie </li>
+</ul>
+</div>
+
 <hr>
 <div class="throw-form">
   <%= render 'form' %>
 </div>
 <hr>
 
-<h4> Previous Results </h4>
+<% if Game.all.length > 0 %>
+<h3> Previous Results </h3>
 <table class="previous-results">
   <tr class="previous-results-th">
     <th>Game #</th>
@@ -26,3 +37,5 @@ and try your luck against the computer.</h3>
   </tr>
 <% end %>
 </table>
+
+<% end %>

@@ -12,10 +12,10 @@
   <% end %>
 
   <div class="field">
-    <h4> Select Signal: </h4> <br />
+    <h3> Select Signal </h3>
     <%= f.select :sign, options_for_select(['Rock', 'Paper', 'Scissors']) %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Throw Sign" %>
   </div>
 <% end %>

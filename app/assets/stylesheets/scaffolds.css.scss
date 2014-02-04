@@ -28,6 +28,25 @@ p, ol, ul, td {
   line-height: 18px;
 }
 
+.rules{
+  margin: 0 auto; 
+  width: 200px; 
+  border: 1px solid black;
+  padding: 0px; 
+  background: white; 
+}
+.rules ul{
+  text-align: left; 
+}
+
+li{
+  padding: -30px; 
+  margin-left: -20px; 
+}
+ul {
+    list-style-position: inside;
+}
+
 pre {
   background-color: #eee;
   padding: 10px;
