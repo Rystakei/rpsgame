@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h2> Game Results </h2>
+
+<p> You picked: <%= @game.user_signal %>
+<p> The computer picked: <%= @game.computer_signal %>
+
+<% if @game.status == "won_by_user" %>
+<p> Congratulations! You won! </p>
+
+<% elsif @game.status == "tied" %>
+<p> It was a tie! </p>
+
+<% else %>
+<p> Sorry, you lost. </p>
+
+<% end %>
+
+<p> Want to <%= link_to "play again?", new_game_path %> </p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>
