@@ -1,11 +1,19 @@
 body {
-  background-color: #fff;
+  background-color: #DCE3E6;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
+h1, h2, h3{
+  text-align: center;
+}
+
+h1{
+  font-size: 60px; 
+  font-family: Helvetica; 
+}
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -16,6 +24,40 @@ pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
+}
+
+.throw-form{
+  width: 500px;
+  margin: 0 auto; 
+}
+.results{
+  margin: 0 auto; 
+}
+
+.results img{
+  padding-left: 50px; 
+  padding-right: 50px; 
+}
+.rps-signs{
+  margin: 0 auto; 
+  width: 200px;  
+}
+
+.results-message{
+  text-align: center; 
+}
+td{ 
+  text-align: center; 
+}
+
+.rps-img{
+  margin: 0 auto; 
+  width: 200px; 
+  border: solid black px;
+}
+
+.sign-png{
+  height: 200px;  
 }
 
 a {
@@ -32,6 +74,7 @@ a {
 div {
   &.field, &.actions {
     margin-bottom: 10px;
+    text-align: center; 
   }
 }
 

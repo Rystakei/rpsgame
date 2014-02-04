@@ -1,6 +1,9 @@
 Rps::Application.routes.draw do
   resources :games
 
+  get "/", :to => "games#index"
+  post "/throw", :to => "games#throw"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -3,6 +3,7 @@ class GamesController < ApplicationController
   # GET /games.json
   def index
     @games = Game.all
+    @game = Game.new
 
     respond_to do |format|
       format.html # index.html.erb
@@ -18,6 +19,14 @@ class GamesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @game }
+    end
+  end
+
+  def throw
+    @game = Game.find(params[:id])
+
+    respond_to do |format|
+      format.html
     end
   end
 
