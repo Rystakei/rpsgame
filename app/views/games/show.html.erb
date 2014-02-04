@@ -10,20 +10,20 @@
 
 	<tr>
 		<td>
-				<%= image_tag("#{@game.user_signal.downcase}.png", :class => "sign-png") %></p>
-			<p> <%= @game.user_signal %></p>
+				<%= image_tag("#{@game.sign.downcase}.png", :class => "sign-png") %></p>
+			<p> <%= @game.sign %></p>
 		</td>
 		<td>
-				<%= image_tag("#{@game.computer_signal.downcase}.png", :class => "sign-png") %></p>
-			<p> <%= @game.computer_signal %></p>
+				<%= image_tag("#{@game.computer_sign.downcase}.png", :class => "sign-png") %></p>
+			<p> <%= @game.computer_sign %></p>
 		</td>
 	</tr>
 </table>
 <div class="results-message">
 <p>
-<% if @game.status == "won_by_user" %>
+<% if @game.status == "User Won" %>
 Congratulations! You won!
-<% elsif @game.status == "tied" %>
+<% elsif @game.status == "Tied" %>
 It was a tie!
 <% else %>
 Sorry, you lost. 

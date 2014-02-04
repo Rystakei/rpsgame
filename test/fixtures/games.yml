@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  user_signal: MyString
-  computer_signal: MyString
+  sign: MyString
+  computer_sign: MyString
 
 two:
-  user_signal: MyString
-  computer_signal: MyString
+  sign: MyString
+  computer_sign: MyString

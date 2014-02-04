@@ -4,11 +4,19 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  text-align: center; 
 }
 
-h1, h2, h3{
-  text-align: center;
+
+.previous-results{
+  margin: 0 auto; 
+  border-collapse: collapse; 
 }
+
+th,td{
+  border: gray solid 1px; 
+}
+
 
 h1{
   font-size: 60px; 
